@@ -1,0 +1,1 @@
+The goal of this project is to create a webform to collect information on people's preferences for the purpose of event planning. In particular, the aim is to overcome the limited or completely lacking implementation of ranked choice voting in other common survey tools. 

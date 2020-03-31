@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>June Dinner + Documentary</title>
+    </head>
+    <body>
+        <h1>June Dinner + Documentary</h1>
+        <!--TODO: form needs an action="" something, but I don't know how this works yet-->
+        <form method="GET">
+            <!--TODO: consider if further data validation would be useful-->
+            <!--TODO: can I make automatic numbering happen so that I can easily reorder/add/remove questions?-->
+            <label for="name"><h3>1. What is your name?</h3></label>
+            <br>
+            <input id="name" type="text" name="name" required>
+            <br>
+            <span><h3>2. On which nights would you attend?</h3></span>
+            <br>
+            <!--TODO: consider what date value should be for proper input into database-->
+            <input id='dates' type="checkbox" name="dates" value="Saturday, June 6">
+            <label for="dates">Saturday, June 6</label>
+            <input id='dates' type="checkbox" name="dates" value="Saturday, June 13">
+            <label for="dates">Saturday, June 13</label>
+            <input id='dates' type="checkbox" name="dates" value="Saturday, June 20">
+            <label for="dates">Saturday, June 20</label>
+            <input id='dates' type="checkbox" name="dates" value="Saturday, June 27">
+            <label for="dates">Saturday, June 27</label>
+            <!--Which nights would you attend? checkbox options-->
+            <!--Please rank the films in order of preference. Maybe drag and drop, probably requires JS?-->
+            <!--Please rank the main dishes in order of preference. Maybe drag and drop, probably requires JS?-->
+            <!--Please rank the ice cream flavors in order of preference. Maybe drag and drop, probably requires JS?-->
+            <!--Anything else (documentary suggestions, ice cream flavor suggestions, etc.)? areatext-->
+        </form>
+    </body>
+
+</html>
