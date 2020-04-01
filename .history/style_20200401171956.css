@@ -3,10 +3,6 @@ h1 {
     font-family: Arial;
 }
 
-body {
-    font-family: Arial;
-}
-
 .image {
     background-image: "banner_photo.jpg";
     background-size: cover;
@@ -14,7 +10,10 @@ body {
     height: 300px;
   }
 
+.body {
+    font-family: Arial;
+}
+
 .question {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 24;
 }

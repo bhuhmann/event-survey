@@ -1,0 +1,16 @@
+.image {
+    background-image: "banner_photo.jpg";
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+h1 {
+    color: sienna;
+    font-family: Arial;
+}
+
+.class {
+    font-family: Arial;
+    font-size: 24;
+}

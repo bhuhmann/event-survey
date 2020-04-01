@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>June Dinner + Documentary</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <header>
+        <figure>
+            <img src="image/bread_soup_crop3.jpg" alt="Bread and soup" style="width:100%;">
+        </figure>
+        <h1>June Dinner + Documentary</h1>
+    </header>
+
+    <body>
+        <!--TODO: form needs an action="" something, but I don't know how this works yet-->
+        <form method="GET">
+            <!--TODO: consider if further data validation would be useful-->
+            <!--TODO: can I make automatic numbering happen so that I can easily reorder/add/remove questions?-->
+            <!--TODO: make question font larger than answer font-->
+            <label for="name" class="question">1. What is your name?</label>
+            <br>
+            <br>
+            <input id="name" type="text" name="name" required>
+            <br>
+            <br>
+            <br>
+            <span class="question">2. On which nights would you attend?</span>
+            <br>
+            <br>
+            <!--TODO: consider what date value should be for proper input into database-->
+            <input id="june-6" type="checkbox" name="dates" value="Saturday, June 6">
+            <label for="june-6">Saturday, June 6</label>
+            <br>
+            <input id="june-13" type="checkbox" name="dates" value="Saturday, June 13">
+            <label for="june-13">Saturday, June 13</label>
+            <br>
+            <input id="june-20" type="checkbox" name="dates" value="Saturday, June 20">
+            <label for="june-20">Saturday, June 20</label>
+            <br>
+            <input id="june-27" type="checkbox" name="dates" value="Saturday, June 27">
+            <label for="june-27">Saturday, June 27</label>
+            <br>
+            <br>
+            <!--The idea for the ranked-choice options is to do a drag-and-drop implementation similar to what 
+            Survey Monkey has currently. Specifically, when a person drags and drops an item, the numbers of 
+            all the items get initially set. Similar to the current implementation, the idea is that people 
+            can also use a dropdown to select a specific rank for any particular item. However, we should have some
+            check for / enforced agreement between manually set rank and drag-and-drop rank. Additionally, 
+            unlike the current Survey Monkey implementation, we should allow for ties (maybe?) and allow for
+            unranked items. For the actual vote tallying, Kevin suggests Condorcet.-->
+            <!--Please rank the films in order of preference. Maybe drag and drop, probably requires JS?-->
+            <!--Please rank the main dishes in order of preference. Maybe drag and drop, probably requires JS?-->
+            <!--Please rank the ice cream flavors in order of preference. Maybe drag and drop, probably requires JS?-->
+            <br>
+            <label for="anything" class="question">6. Anything else (documentary suggestions, ice cream flavor suggestions, etc.)?</label>
+            <br>
+            <br>
+            <textarea id="anything" name="free-response" rows="5" cols="50"></textarea>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+
+</html>
