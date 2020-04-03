@@ -1,0 +1,29 @@
+/* clear any margin and padding settings the browser has */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 15%;
+    font-family: Arial;
+}
+
+h1 {
+    color: sienna;
+    margin: 1% 0;
+}
+
+.image {
+    background-image: "banner_photo.jpg";
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}

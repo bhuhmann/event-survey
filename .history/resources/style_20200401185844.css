@@ -1,0 +1,19 @@
+h1 {
+    color: sienna;
+}
+
+body {
+    font-family: Arial;
+}
+
+.image {
+    background-image: "banner_photo.jpg";
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+}

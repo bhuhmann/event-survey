@@ -3,7 +3,6 @@
 
     <head>
         <title>June Dinner + Documentary Survey</title>
-        <link href="resources/reset.css" rel="stylesheet" type="text/css">
         <link href="resources/style.css" rel="stylesheet" type="text/css">
     </head>
 
@@ -11,8 +10,7 @@
         <figure>
             <img src="resources/image/bread_soup_crop3.jpg" alt="Bread and soup" style="width:100%;">
         </figure>
-        <h1>June Dinner + Documentary Survey</h1>
-        <br>
+        <h1>June Dinner + Documentary</h1>
     </header>
 
     <body>
@@ -20,15 +18,17 @@
         <form method="GET">
             <!--TODO: consider if further data validation would be useful-->
             <!--TODO: can I make automatic numbering happen so that I can easily reorder/add/remove questions?-->
-            
+            <!--TODO: make question font larger than answer font-->
             <label for="name" class="question">1. What is your name?</label>
+            <br>
             <br>
             <input id="name" type="text" name="name" required>
             <br>
             <br>
+            <br>
             <span class="question">2. On which nights would you attend?</span>
             <br>
-
+            <br>
             <!--TODO: consider what date value should be for proper input into database-->
             <input id="june-6" type="checkbox" name="dates" value="Saturday, June 6">
             <label for="june-6">Saturday, June 6</label>
@@ -54,8 +54,9 @@
             <!--Please rank the main dishes in order of preference. Maybe drag and drop, probably requires JS?-->
             <!--Please rank the ice cream flavors in order of preference. Maybe drag and drop, probably requires JS?-->
             <br>
-            
             <label for="free-response" class="question">6. Anything else (documentary suggestions, ice cream flavor suggestions, etc.)?</label>
+            <br>
+            <br>
             <textarea id="free-response" name="free-response" rows="5" cols="50"></textarea>
             <br>
             <br>
